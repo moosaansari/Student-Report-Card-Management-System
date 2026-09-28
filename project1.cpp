@@ -102,7 +102,7 @@ int student::retrollno()
     return rollno;
 }
 
-// CREATE RECORD
+
 void write_student()
 {
     student st;
@@ -124,7 +124,7 @@ void write_student()
     getch();
 }
 
-// SEARCH / DISPLAY RECORD
+
 void display_sp(int n)
 {
     system("CLS");
@@ -159,7 +159,7 @@ void display_sp(int n)
     getch();
 }
 
-// MODIFY RECORD
+
 void modify_student(int n)
 {
     system("CLS");
@@ -207,7 +207,7 @@ void modify_student(int n)
     getch();
 }
 
-// DELETE RECORD
+
 void delete_student(int n)
 {
     system("CLS");
@@ -252,7 +252,6 @@ void delete_student(int n)
     getch();
 }
 
-// RESULT MENU
 void result()
 {
     char ch;
@@ -284,7 +283,6 @@ void result()
     }
 }
 
-// CRUD MENUG
 void entry_menu()
 {
     char ch;
@@ -335,7 +333,6 @@ void entry_menu()
     }
 }
 
-// PASSWORD FUNCTION
 bool password()
 {
     system("CLS");
@@ -354,7 +351,7 @@ bool password()
 
     while (ch != 13)
     {
-        // Backspace
+
         if (ch == 8)
         {
             if (!pass.empty())
@@ -385,12 +382,11 @@ bool password()
     return false;
 }
 
-// MAIN FUNCTION
 int main()
 {
     while (!password())
     {
-        // Keep asking until correct password
+
     }
 
     char ch;
